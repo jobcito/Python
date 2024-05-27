@@ -13,7 +13,7 @@ palabras_a_quitar = set([
     'mientras', 'si', 'cuando', 'donde', 'nan', 'etc', 'se', 'no', 'es', 'al', 
     'respecto', 'del', 'le', 'me', 'mi', 'este', 'ya', 'lo', 'gracias', 'tengo', 
     'hola', 'saludos', 'su', 'bien', 'esta', 'toma', 'escribo', 'espero', 'queria'
-    'tardes', 'debido', 'cual'
+    'tardes', 'debido', 'cual', 'muchas'
 ])
 
 def procesar_csv(input_file, text_columns, output_csv, output_wordcloud, output_bar_chart):
