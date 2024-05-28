@@ -10,7 +10,7 @@ palabras_a_quitar = set([
     'entre', 'hacia', 'hasta', 'mediante', 'para', 'por', 'según', 'sin', 
     'so', 'sobre', 'tras', 'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas',
     'y', 'o', 'u', 'que', 'como', 'aunque', 'pero', 'sino', 'porque', 'pues', 
-    'mientras', 'si', 'cuando', 'donde', 'nan', 'etc', 'se', 'no', 'es', 'al', 'respecto', 'del', 'le'
+    'mientras', 'si', 'cuando', 'donde', 'nan', 'etc', 'se', 'no', 'es', 'al', 'respecto', 'del', 'le', 'consulta', 'consulto'
 ])
 
 def procesar_csv(input_file, text_columns, output_csv, output_wordcloud, output_bar_chart):
