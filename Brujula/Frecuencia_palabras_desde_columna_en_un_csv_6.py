@@ -3,6 +3,9 @@ from collections import Counter
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import re
+from time import time
+start = time()
+
 
 # Lista de artículos e ilativos a excluir
 palabras_a_quitar = set([
@@ -62,7 +65,12 @@ def procesar_csv(input_file, text_columns, output_csv, output_wordcloud, output_
     
     # Generar la nube de palabras
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(word_counts)
-    
+ 
+    end = time()
+    execution_time = end - start
+    print("Tiempo de ejecución sin los graficos: ", execution_time)
+
+
     # Mostrar y guardar la nube de palabras
     plt.figure(figsize=(10, 5))
     plt.imshow(wordcloud, interpolation='bilinear')
@@ -99,3 +107,5 @@ output_bar_chart = 'grafico_barras.png'  # Nombre de la imagen del gráfico de b
 
 # Llamar a la función para procesar el archivo CSV
 procesar_csv(input_file, text_columns, output_csv, output_wordcloud, output_bar_chart)
+
+
