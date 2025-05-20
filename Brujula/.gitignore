@@ -1,0 +1,12 @@
+# Ignorar archivos de audio, video
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pdf
+*.xlsx
+*.png
+
